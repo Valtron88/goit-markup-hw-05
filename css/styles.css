@@ -101,7 +101,7 @@ ul{
 .header-telephon:focus,
 .header-link:focus{
     color:var(--ocean);
-    transition: color 250ms ;
+    transition-duration: 250ms;
 }
 
 .header-link.active::after{
@@ -110,7 +110,7 @@ ul{
     height: 3px;
     border-radius: 2px;
     background-color:var(--ocean);
-    position: absolute;
+    
     
 
 }
