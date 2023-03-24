@@ -11,6 +11,7 @@ body{
     --white:#FFFFFF;
     --footer-text:#E7E9FC;
     --green:#31D0AA;
+    --customer:#8E8F99;
 }
 
 *,
@@ -423,7 +424,7 @@ ul{
     height: 100%;
     border-radius: 50px;
     background-color:var(--fiolet);
-    color: #FFFFFF;
+    color: var(--white);
 
 }
 
@@ -497,9 +498,9 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--customer);
     border-radius: 4px;
-    color: #8E8F99;
+    color: var(--customer);
    
 
 }
@@ -781,7 +782,7 @@ ul{
 .cards-overlay {
     background-color:var(--fiolet);
     padding: 40px 32px;
-    color: #FFFFFF;
+    color: var(--white);
     position: absolute;
     top: 0;
     left: 0;
@@ -811,6 +812,10 @@ ul{
     top: 0;
     left: 0;
     position: fixed;
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .modal {
     width: 408px;
@@ -830,7 +835,7 @@ ul{
     height: 24px;
     margin-left: auto;
     border-radius: 50%;
-    background: #E7E9FC;
+    background: var(--footer-text);
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: block;
     position: relative;
