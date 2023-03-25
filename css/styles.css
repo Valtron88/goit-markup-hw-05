@@ -92,6 +92,9 @@ ul{
     letter-spacing: 0.02em;
     color: var(--brand-color);
     position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -102,9 +105,7 @@ ul{
 .header-telephon:focus,
 .header-link:focus{
     color:var(--ocean);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .header-link.active{
     color: var(--ocean);
@@ -146,6 +147,9 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -155,6 +159,9 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -208,15 +215,15 @@ ul{
     display: block;
     margin: auto;
     padding: 16px 32px;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .hero-btn:focus,
 .hero-btn:hover{ 
     background-color:var(--ocean);
-    transition-property: background;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----/hero--------*/
@@ -425,6 +432,9 @@ ul{
     border-radius: 50px;
     background-color:var(--fiolet);
     color: var(--white);
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -436,9 +446,7 @@ ul{
 .our-times-social-link:hover,
 .our-times-social-link:focus{
    background-color: var(--ocean);
-   transition-property: background;
-   transition-duration: 250ms;
-   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+   
   
 }
 
@@ -501,6 +509,9 @@ ul{
     border: 1px solid var(--customer);
     border-radius: 4px;
     color: var(--customer);
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
    
 
 }
@@ -516,9 +527,7 @@ ul{
 .customer-link:is(:hover, :focus){
     border: 1px solid var(--ocean);
     color: var(--ocean);
-    transition-property: color border;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+   
    
 
 }
@@ -606,6 +615,9 @@ ul{
     background-color:var(--ocean);
     justify-content: center;
     align-items: center;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-image {}
@@ -624,9 +636,7 @@ ul{
 .footer-social-link:focus,
 .footer-social-link:hover{
     background-color: var(--green);
-    transition-property: background;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
    
 
 }
@@ -685,6 +695,9 @@ ul{
     cursor: pointer;
     text-align: center;
     padding: 12px 24px;
+    border-color:transparent;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn-all {
@@ -707,9 +720,7 @@ ul{
     background: var(--ocean);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color:var(--white);
-    border-color:transparent;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 
@@ -739,6 +750,9 @@ ul{
 
 .cards-link {
     display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -774,9 +788,7 @@ ul{
 
 .cards-link:is(:hover, :focus) {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .cards-overlay {
@@ -839,7 +851,10 @@ ul{
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: block;
     position: relative;
-    
+    cursor: pointer;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .modal-close {
     top: 50%;
@@ -855,6 +870,12 @@ ul{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
+}
+
+.modal-button:is(:hover, :focus){
+    background-color: var(--ocean);
+    fill: var(--white);
 
 }
 
